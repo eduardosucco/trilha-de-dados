@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: read
+  id-token: write  # Adicionamos a permissão para usar o token
 
 jobs:
   generate-readme:
@@ -34,3 +35,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 'Atualiza README principal automaticamente'
+          push_options: '--force'
+          # Autentica com o token
+          repository: ${{ github.repository }}
+          token: ${{ secrets.GITHUB_TOKEN }}
