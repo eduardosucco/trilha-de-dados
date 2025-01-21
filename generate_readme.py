@@ -7,25 +7,23 @@ def gerar_readme_principal(caminho_repositorio):
     arquivos_ordenados = []
     for arquivo in os.listdir(caminho_repositorio):
         if arquivo.endswith(".md") and arquivo != "README.md":
-            match = re.match(r'^(\d+)-', arquivo)
+            match = re.match(r'^(\d+)-(.*)\.md$', arquivo)
             if match:
                 numero = int(match.group(1))
-                arquivos_ordenados.append((numero, arquivo))
+                titulo = match.group(2).replace("-", " ").strip()
+                arquivos_ordenados.append((numero, titulo, arquivo))
             else:
-                arquivos_ordenados.append((float('inf'), arquivo))
+                titulo = arquivo[:-3].replace("-", " ").strip()
+                arquivos_ordenados.append((float('inf'), titulo, arquivo))
     
     arquivos_ordenados.sort(key=lambda item: item[0])
         
-    for numero, arquivo in arquivos_ordenados:
+    for numero, titulo, arquivo in arquivos_ordenados:
         caminho_completo = os.path.join(caminho_repositorio, arquivo)
         caminho_relativo = os.path.relpath(caminho_completo, caminho_repositorio)
-        try:
-            with open(caminho_completo, "r", encoding="utf-8") as f:
-                primeira_linha = f.readline().strip()
-        except UnicodeDecodeError:
-                primeira_linha = "Arquivo não pode ser lido ou está vazio"
-        conteudo_readme_principal += f"- [{primeira_linha}]({caminho_relativo})\n"
-            
+        
+        conteudo_readme_principal += f"- {numero if numero != float('inf') else ''} [{titulo}]({caminho_relativo})\n"
+
     with open(os.path.join(caminho_repositorio, "README.md"), "w", encoding="utf-8") as arquivo_readme_principal:
         arquivo_readme_principal.write(conteudo_readme_principal)
             
