@@ -19,7 +19,6 @@ Pense em um supermercado gigante:
 
 *   **Big Data:** 🏢 É como se você tivesse um supermercado com milhares de produtos, promoções e clientes. É muita informação para uma pessoa sozinha organizar.
     *   *Precisamos de carrinhos e prateleiras especiais para lidar com esse "supermercado".*
-    *   [Imagem de exemplo](https://i.imgur.com/yN6z0rC.png)
 
 ## Onde os Dados São Guardados? 📦
 
@@ -27,10 +26,10 @@ Os dados precisam de lugares para ficar, como depósitos e prateleiras:
 
 *   **Data Lake (Lago de Dados):** 🌊 Imagine um grande depósito onde você joga todos os ingredientes (dados) "brutos" de diferentes mercados (fontes).
     *   *É como um depósito onde tudo fica misturado, mas ainda sem muita ordem.*
-    *   [Imagem de exemplo](https://i.imgur.com/021sU5r.png)
+
 *   **Data Warehouse (Armazém de Dados):** 🗄️ É como um armazém bem organizado, onde os ingredientes (dados) já foram lavados, cortados e separados por tipos.
     *   *Pronto para ser usado na cozinha (análises e relatórios).*
-    *   [Imagem de exemplo](https://i.imgur.com/Y0Mh5jJ.png)
+
 
 ## Como os Dados se Movimentam? 🚚
 
@@ -44,7 +43,7 @@ Os dados não ficam parados, eles precisam se movimentar pela "cozinha":
 
 *   **Data Pipeline (Esteira de Ingredientes):** ⛓️ É como uma esteira que leva os ingredientes (dados) de um lugar para outro, de forma automática.
     *   *Assim, os dados passam por todas as etapas sem que você precise ficar fazendo tudo manualmente.*
-    *   [Imagem de exemplo](https://i.imgur.com/tV5rWqJ.png)
+
 
 ## Onde Tudo Isso Acontece? 🛠️
 
@@ -55,11 +54,11 @@ Para preparar e usar os dados, precisamos de ferramentas e equipamentos:
     *   **NoSQL:** 🗂️ São como armários mais flexíveis, que aceitam diferentes tipos de ingredientes. *Ex: Armário de temperos com potes de diferentes formatos.*
 *   **Ferramentas de Processamento:** 🧰 São como os utensílios de cozinha que nos ajudam a cortar, misturar e cozinhar os dados.
     *   *Exemplos: Apache Spark, Hadoop.*
-    *   [Imagem de exemplo](https://i.imgur.com/Q5G0s3C.png)
+
 
 *   **Nuvem (Cloud):** ☁️ É como se tivéssemos uma cozinha gigante na internet, onde podemos guardar, preparar e usar os dados.
     *   *Exemplos: AWS, Google Cloud, Azure.*
-    *   [Imagem de exemplo](https://i.imgur.com/1uI4H6r.png)
+
 
 ## Mais Conceitos Importantes (Expandindo a Cozinha!) 🧑‍🍳
 
