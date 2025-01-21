@@ -1,0 +1,36 @@
+name: Generate Main README
+
+on:
+  push:
+    branches:
+      - main  # ou sua branch principal
+  pull_request:
+    branches:
+      - main # ou sua branch principal
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  generate-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run script to generate README
+        run: python generate_readme.py
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'Atualiza README principal automaticamente'
