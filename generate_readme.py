@@ -22,7 +22,15 @@ def gerar_readme_principal(caminho_repositorio):
         caminho_completo = os.path.join(caminho_repositorio, arquivo)
         caminho_relativo = os.path.relpath(caminho_completo, caminho_repositorio)
         
-        conteudo_readme_principal += f"- {numero if numero != float('inf') else ''} [{titulo}]({caminho_relativo})\n"
+        emoji = ""
+        if "Conceitos Basicos Dados" in titulo:
+            emoji = " 📊"
+        elif "Git GitHub" in titulo:
+            emoji = " 🐙"
+        elif "Trilha de ferramentas" in titulo:
+            emoji = " 🛠️"
+        
+        conteudo_readme_principal += f"- {numero if numero != float('inf') else ''} **{titulo}** {emoji}  ([Leia mais]({caminho_relativo}))\n"
 
     with open(os.path.join(caminho_repositorio, "README.md"), "w", encoding="utf-8") as arquivo_readme_principal:
         arquivo_readme_principal.write(conteudo_readme_principal)
