@@ -36,6 +36,4 @@ jobs:
         with:
           commit_message: 'Atualiza README principal automaticamente'
           push_options: '--force'
-          # Autentica com o token
-          repository: ${{ github.repository }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: .
