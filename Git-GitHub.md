@@ -1,4 +1,4 @@
-# Guia Simples de Git e GitHub (Para Iniciantes) - Versão Visual 🚀
+# Guia Simples de Git e GitHub (Para Iniciantes) 🚀
 
 Este guia é um mapa visual para você que está começando a explorar o mundo do Git e do GitHub. A ideia é explicar tudo de forma simples e divertida, como em um bate-papo entre amigos, usando emojis e analogias do dia a dia.
 
@@ -8,7 +8,7 @@ Imagine que você está escrevendo um livro, mas não quer perder nenhuma versã
 
 *   **Git:** 🗂️ É como um sistema de controle de versões para seus arquivos. Ele guarda todas as mudanças que você faz, permitindo que você volte para versões antigas se precisar.
     *   *Pense nele como um histórico do seu trabalho.*
-    *   [Imagem de exemplo: Histórico de mudanças](https://i.imgur.com/iXg6z0z.png)
+
 
 ## Por que usar Git? 🤔
 
@@ -33,7 +33,7 @@ Imagine que você quer mostrar seu livro para outras pessoas:
 
 *   **GitHub:** 🌐 É como um site onde você pode guardar e compartilhar seu livro com outras pessoas.
     *   *Ele é uma plataforma online onde você armazena seus projetos com Git.*
-    *   [Imagem de exemplo: Interface do GitHub](https://i.imgur.com/J20Z6rQ.png)
+
 
 ## Por que usar o GitHub? 🤔
 
