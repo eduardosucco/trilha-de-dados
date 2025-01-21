@@ -11,7 +11,7 @@ on:
 
 permissions:
   contents: read
-  id-token: write  # Adicionamos a permissão para usar o token
+  id-token: write
 
 jobs:
   generate-readme:
@@ -36,4 +36,3 @@ jobs:
         with:
           commit_message: 'Atualiza README principal automaticamente'
           push_options: '--force'
-          repository: .
